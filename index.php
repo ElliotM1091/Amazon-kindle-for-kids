@@ -38,16 +38,23 @@
 				<hr/>
 		<h2>Use Casees</h2>
 			<ul>
-				<li>Use case 1: user writes a review by selecting product purchased, then selecting "write review", writing review, giving a star rating rating then clicking post</li>
+				<li>Use case 1: Kimberly wants to write a review for a product she likes</li>
+					<ol>
+					<li>Kimberly opens browser on her Laptop and goes to Amazon.com</li>
+					<li>the browswer then opens Amazon.com</li>
+					<li>Kimberly then logs into her Amazon account</li>
+					<li></li>
+					</ol>
 				<li>Use case 2: User reviews reviews by searching product interested in, finding and reading reviews, then selecting rather they were helpful or not via a thumbs up or down button.  </li>
 			</ul>
 
 			<hr/>
 		<h2>Entities</h2>
-			<h3>User id</h3>
-				<li>Review</li>
-				<li>star rating(1-5)</li>
-				<li>helpful or not button</li>
+			<h3>profile</h3>
+				<ul>
+					<li>Name</li>
+					<li>Reviews</li>
+					<li>helpful votes</li>
 			</ul>
 		<hr/>
 		<h1>Conceptual Model</h1>
