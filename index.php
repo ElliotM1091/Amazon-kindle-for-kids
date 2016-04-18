@@ -40,22 +40,33 @@
 			<ul>
 				<li>Use case 1: Kimberly wants to write a review for a product she likes</li>
 					<ol>
-					<li>Kimberly opens browser on her Laptop and goes to Amazon.com</li>
-					<li>the browswer then opens Amazon.com</li>
-					<li>Kimberly then logs into her Amazon account</li>
-					<li></li>
+						<li>Kimberly opens browser on her Laptop and goes to Amazon.com</li>
+						<li>the browswer then opens Amazon.com</li>
+						<li>Kimberly then logs into her Amazon account.</li>
+						<li>Amazon.com loads Kimberly's home page, showing her her recent products.</li>
+						<li>Kimberly then selects product she wishes to submit a review.</li>
+						<li>Amazon.com loads a black review for her choosen product.</li>
+						<li>Kimberly then writes her review and selects a rating of 1-5 and clicks submit.</li>
+						<li>Amazon then posts the review for all to see.</li>
 					</ol>
-				<li>Use case 2: User reviews reviews by searching product interested in, finding and reading reviews, then selecting rather they were helpful or not via a thumbs up or down button.  </li>
-			</ul>
 
 			<hr/>
-		<h2>Entities</h2>
-			<h3>profile</h3>
+		<h1>Entities</h1>
+			<h2>profile</h2>
 				<ul>
 					<li>Name</li>
 					<li>Reviews</li>
 					<li>helpful votes</li>
 			</ul>
+			<h2>Review</h2>
+				<ul>
+					<li>ReviewId</li>
+					<li>review content</li>
+					<li>Title</li>
+					<li>Date</li>
+					<li>item description</li>
+					<li>comment field</li>
+				</ul>
 		<hr/>
 		<h1>Conceptual Model</h1>
 			<p><strong>relationships</strong></p>
