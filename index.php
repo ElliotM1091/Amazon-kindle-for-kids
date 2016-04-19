@@ -37,8 +37,7 @@
 				</ul>
 				<hr/>
 		<h2>Use Casees</h2>
-			<ul>
-				<li>Use case 1: Kimberly wants to write a review for a product she likes</li>
+				<p>Use case 1: Kimberly wants to write a review for a product she likes</p>
 					<ol>
 						<li>Kimberly opens browser on her Laptop and goes to Amazon.com</li>
 						<li>the browswer then opens Amazon.com</li>
@@ -55,24 +54,36 @@
 			<h2>profile</h2>
 				<ul>
 					<li>Name</li>
-					<li>Reviews</li>
+					<li>profileId</li>
+					<li>e-mail(PK)</li>
 					<li>helpful votes</li>
+					<li>profile picture</li>
+					<li>following</li>
+					<li>Activities</li>
 			</ul>
 			<h2>Review</h2>
 				<ul>
-					<li>ReviewId</li>
+					<li>ReviewId(PK)</li>
 					<li>review content</li>
 					<li>Title</li>
 					<li>Date</li>
 					<li>item description</li>
-					<li>comment field</li>
+					<li>useful or not field</li>
 				</ul>
+			<h2>Star ratings</h2>
+				<ul>
+					<li>avera</li>
+					<li>e-mail(FK)</li>
+					<li>ReviewId(FK)</li>
+				</ul>
+
 		<hr/>
-		<h1>Conceptual Model</h1>
+		<h2>Conceptual Model</h2>
 			<p><strong>relationships</strong></p>
 				<ul>
-					<li><em>one</em> <strong>User</strong> can post a<strong>Review</strong> for <em>many</em> products</li>
-					<li><em>one</em> <strong>User</strong> can give <strong>star ratings</strong>to <em>many</em>products</li>
+					<li><em>one</em> <strong>profileId</strong> can <strong>Review</strong> <em>many</em> products</li>
+					<li><em>many</em> <strong>profileIds</strong> can give <strong>star ratings</strong> to <em>many</em>Reviews</li>
+					<li><em>many</em> <stront>Reviews</stront> can have <em>many</em> <stront>star ratings</stront></li>
 					<li><em></em></li>
 				</ul>
 	</body>
