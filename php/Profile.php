@@ -21,13 +21,54 @@ class Profile implements \JsonSerializeable {
 	 **/
 	private $reviewId;
 	/**
-	 * Name for this profile
-	 * @var string $name
+	 * the activities for this profile
+	 * @var string $activities
 	 **/
 	private $activities;
 	/**
 	 * email for user
-	 * 
+	 * @var string $email
 	 **/
+	private $email;
+	/**
+	 * people this profile is following
+	 * @var int $following ;
+	 **/
+	private $following;
+	/**
+	 * a counter of helpful votes this profile has
+	 * @var int $helpfulVotes
+	 **/
+	private $helpfulVotes;
+	/**
+	 * name for this profile
+	 * @var string $name
+	 **/
+	private $name;
+	/**
+	 * avatar for profile
+	 * @var string $avatar
+	 **/
+	private $avatar;
+
+	/**
+	 * accessor method for profile id
+	 *
+	 * $return int value profileId
+	 **/
+	public function getprofileId() {
+		return($this ->profileId);
+	}
+
+	/**
+	 * mutator method for profile id
+	 *
+	 * @param int new value of profile id
+	 * @throws UnexpectedValueException if $newProfileId is not an interger
+	 **/
+	public function setProfileId($newProfileID) {
+		$newProfileId = filter var(newProfileId)
+
+	}
 }
 ?>
