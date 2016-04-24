@@ -7,7 +7,7 @@ namespace Edu\Cnm\emurrey\Datadesign;
  * This profile is a short example of data that is needed to review an Amazon product.
  * This can also include email, names, activities, and more.
  *
- * @author Elliot Murrey <emurrey@cnm.edu?
+ * @author Elliot Murrey <emurrey@cnm.edu>
  **/
 class Profile implements \JsonSerializeable {
 	/**
