@@ -16,11 +16,6 @@ class Profile implements \JsonSerializeable {
 	 **/
 	private $profileId;
 	/**
-	 * id for the Review written by Profile; this is a foreign key
-	 * @var int $reviewId
-	 **/
-	private $reviewId;
-	/**
 	 * the activities for this profile
 	 * @var string $activities
 	 **/
