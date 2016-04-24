@@ -9,10 +9,29 @@ CREATE TABLE profile (
 	profileAvatar        VARCHAR(32),
 	profileFollow        VARCHAR(32),
 	profileHelpfullVotes INT UNSIGNED,
-	profileActivities    VARCHAR(2000)
-		UNIQUE (email)
+	profileActivities    VARCHAR(2000),
+	UNIQUE(email),
+	PRIMARY KEY(profileId)
 );
 CREATE TABLE review (
-	reviewId INT UNSIGNED AUTO_INCREMENT NOT NULL,
-	Tittle VARCHAR(32) NOT NULL
-)
+	reviewId        INT UNSIGNED AUTO_INCREMENT NOT NULL,
+	profileId       INT UNSIGNED                NOT NULL,
+	tittle          VARCHAR(32)                 NOT NULL,
+	reviewDate      DATETIME                    NOT NULL,
+	itemDiscription VARCHAR(128),
+	reveiwContent   VARCHAR(2000),
+	usefulOrNot     INT UNSIGNED,
+	INDEX(profileId),
+	FOREIGN KEY (profileId) REFERENCES profile (profileId),
+	PRIMARY KEY (reviewId)
+);
+CREATE TABLE rating  (
+	profileId INT UNSIGNED NOT NULL,
+	reviewId INT UNSIGNED NOT NULL,
+	rating INT UNSIGNED NOT NULL,
+	INDEX(profileId),
+	INDEX(reviewId),
+	FOREIGN KEY (profileId),
+	FOREIGN KEY (reviewId),
+	PRIMARY KEY (profileId, reviewId)
+);
