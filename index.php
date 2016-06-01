@@ -78,7 +78,8 @@
 				</ul>
 
 		<hr/>
-		<h2>Conceptual Model</h2>
+		<h2>
+			Model</h2>
 			<p><strong>relationships</strong></p>
 				<ul>
 					<li><em>one</em> <strong>profileId</strong> can <strong>Review</strong> <em>many</em> products</li>
